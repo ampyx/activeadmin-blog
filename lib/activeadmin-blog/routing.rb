@@ -1,7 +1,7 @@
 module ActionDispatch::Routing
   class Mapper
     def mount_blog_at(mount_location)
-      scope mount_location, :module => "ActiveadminBlog" do
+      scope mount_location, :module => "Activeadmin_blog" do
         get '/'               => 'posts#index',     :as => :blog
         get '/search'         => 'posts#search',    :as => :blog_search
         get '/feed'           => 'posts#feed',      :as => :blog_rss_feed
